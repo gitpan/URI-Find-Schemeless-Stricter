@@ -6,7 +6,7 @@ use strict;
 
 use base 'URI::Find';
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 # We could put the whole ISO country code thing in here...
 my $tldRe      = '(?i:biz|com|edu|gov|info|int|mil|net|org|[a-z]{2})';
