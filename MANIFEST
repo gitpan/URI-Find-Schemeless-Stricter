@@ -2,6 +2,7 @@ Changes
 Makefile.PL
 MANIFEST
 README
-Stricter.pm
+lib/URI/Find/Schemeless/Stricter.pm
 t/1.t
 SIGNATURE
+META.yml                                 Module meta-data (added by MakeMaker)
