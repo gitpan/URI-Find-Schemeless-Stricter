@@ -1,7 +1,10 @@
 Changes
+lib/URI/Find/Schemeless/Stricter.pm
 Makefile.PL
 MANIFEST
+MANIFEST.SKIP
+META.yml			Module meta-data (added by MakeMaker)
 README
-lib/URI/Find/Schemeless/Stricter.pm
 t/1.t
-META.yml                                 Module meta-data (added by MakeMaker)
+t/pod-coverage.t
+t/pod.t

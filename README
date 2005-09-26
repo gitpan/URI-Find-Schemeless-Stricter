@@ -1,38 +1,39 @@
-URI/Find/Schemeless/Stricter version 0.01
-=========================================
+NAME
+    URI::Find::Schemeless::Stricter - Find schemeless URIs in arbitrary
+    text.
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+SYNOPSIS
+            require URI::Find::Schemeless::Stricter;
 
-A README file is required for CPAN modules since CPAN extracts the
-README file from a module distribution so that people browsing the
-archive can use it get an idea of the modules uses. It is usually a
-good idea to provide version information here so that people can
-decide whether fixes for the module are worth downloading.
+            my $finder = URI::Find::Schemeless::Stricter->new(\&callback);
 
-INSTALLATION
+    The rest is the same as URI::Find::Schemeless.
 
-To install this module type the following:
+DESCRIPTION
+  schemeless_uri_re
+    URI::Find finds absolute URIs in plain text with some weak heuristics
+    for finding schemeless URIs. This subclass is for finding things which
+    might be URIs in free text. It is slightly stricter than
+    URI::Find::Schemeless, as it finds things like "www.foo.com" but not
+    "lifes.a.bitch.if.you.aint.got.net"; it finds "1.2.3.4/foo" but not
+    "1.2.3.4". This should mean your sectioned lists no longer get marked up
+    as URLs...
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+AUTHOR
+    Current maintainer: Tony Bowden
 
-DEPENDENCIES
+    Original author: Simon Cozens
 
-This module requires these other modules and libraries:
+BUGS and QUERIES
+    Please direct all correspondence regarding this module to:
+    bug-URI-Find_Schemeless-Stricter@rt.cpan.org
 
-  blah blah blah
+COPYRIGHT AND LICENSE
+    Copyright 2003 - 2005 by Kasei Ltd.
 
-COPYRIGHT AND LICENCE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
-Put the correct copyright and licence information here.
-
-Copyright (C) 2003 Simon Cozens
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
+SEE ALSO
+    URI::Find, URI::Find::Schemeless
 

@@ -6,7 +6,7 @@ use strict;
 
 use base 'URI::Find';
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 # We could put the whole ISO country code thing in here...
 my $tldRe      = '(?i:biz|com|edu|gov|info|int|mil|net|org|[a-z]{2})';
@@ -58,19 +58,21 @@ The rest is the same as URI::Find::Schemeless.
 
 =head1 DESCRIPTION
 
-URI::Find finds absolute URIs in plain text with some weak heuristics
+=head2 schemeless_uri_re
+
+L<URI::Find> finds absolute URIs in plain text with some weak heuristics
 for finding schemeless URIs.  This subclass is for finding things
 which might be URIs in free text.  It is slightly stricter than
-C<URI::Find::Schemeless>, as it finds things like "www.foo.com" but not
+L<URI::Find::Schemeless>, as it finds things like "www.foo.com" but not
 "lifes.a.bitch.if.you.aint.got.net"; it finds "1.2.3.4/foo" but not 
 "1.2.3.4". This should mean your sectioned lists no longer get marked up
 as URLs...
 
 =head1 AUTHOR
 
-Original author: Simon Cozens
-
 Current maintainer: Tony Bowden
+
+Original author: Simon Cozens
 
 =head1 BUGS and QUERIES
 
@@ -79,7 +81,7 @@ Please direct all correspondence regarding this module to:
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2003, 2004 by Kasei
+Copyright 2003 - 2005 by Kasei Ltd.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

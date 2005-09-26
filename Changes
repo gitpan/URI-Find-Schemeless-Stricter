@@ -1,5 +1,8 @@
 Revision history for Perl extension URI::Find::Schemeless::Stricter.
 
+1.03  Mon Sep 26 16:43:17 UTC 2005
+	- Minor tweaks
+
 1.02  Mon Dec 27 11:51:44 UTC 2004
 	- Removed Simon's old SIGNATURE file from the distribution, as it's no
 	  longer accurate.
